@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Cadastro</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script href = "http://localhost/Processo/PegarProcesso.php"></script>
+      <script src = "js/codigo.js"></script>
+	  <link href = "style.css" type = "text/css" rel = "stylesheet">
+   </head>
+      <body>
+            <div class="divao">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                                <h1>Cadastro de alunos</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <label for="1">Nome</label>
+                                <br>
+                                <input class="campao" type="text" id="1" name="user"  maxlength="20" class="camposForm">
+                        </td>
+                        <td>
+                                <label for="2">Endereço</label>
+                                <br>
+                                <input class="campao" type="text" id="2" name="pass" maxlength="30" class="camposForm">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <label for="3">Cidade</label>
+                                <br>
+                                <input class="campao" type="text" id="3" name="pass" class="camposForm" maxlength="20">
+                        </td>
+                        <td>
+                                <label for="4">UF</label>
+                                <br>
+                                <input class="campao rg" type="text" id="4" name="pass"  class="camposForm" maxlength="2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <label for="5">RG</label>
+                                <br>
+                                <input class="campao" type="text" id="5" name="pass" class="camposForm" maxlength="11">
+                        </td>
+                        <td>
+                                <label for="6">CPF</label>
+                                <br>
+                                <input class="campao" type="text" id="6" name="pass" class="camposForm" maxlength="11" type="text" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <label for="7">Email</label>
+                                <br>
+                                <input class="campao" type="text" id="7" name="pass"  maxlength="20" class="camposForm">
+                        </td>
+                        <td>
+                                <label>Cursos</label>
+                                <br>
+                                <select>
+                                    <option>Escolha seu curso</option>
+                                    <option>Redes</option>
+                                    <option>SI</option>
+                                    <option>ADS</option>
+                                </select>
+                        </td>
+                    </tr>
+            </table>
+
+                <br><br>
+                <fieldset>
+                    <legend><label>Redes Sociais:</label></legend>
+                    <input id = "Facebook" type="checkbox" class = "sociais"><label for = "Facebook">Facebook</label>
+                    <input id = "Twitter" type="checkbox" class = "sociais"><label for = "Twitter">Twitter</label><br>
+                    <input id = "Whatsapp" type="checkbox" class = "sociais"><label for = "Whatsapp">Whatsapp</label>
+                    <input id = "Outros" type="checkbox" class = "sociais"><label for = "Outros">Outros</label>
+                  </fieldset>
+                <label>Qual é o motivo da sua inscrição?</label><br>
+                <textarea class="campao" maxlength="100"></textarea>
+                <br>
+                <br>
+                <center>
+                <input class="botao" type="submit" name="login" id = "btnCarregar" class="login loginmodal-submit" value="Cadastrar">
+                </center>
+                </form>
+
+            </div>
+    </body>
+
+</html>
